@@ -3,7 +3,7 @@ package model;
 import java.io.Serializable;
 
 /**
- * @author: Havan Patel, and TPULLIS TRAVIS B
+ * @author: Havan Patel
  */
 public class Tag implements Serializable {
 

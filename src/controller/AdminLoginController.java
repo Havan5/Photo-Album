@@ -21,7 +21,7 @@ import model.User;
 import util.UiUserManager;
 
 /**
- * @author: Havan Patel, and TPULLIS TRAVIS B
+ * @author: Havan Patel
  */
 public class AdminLoginController {
 

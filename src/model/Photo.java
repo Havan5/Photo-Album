@@ -10,7 +10,7 @@ import java.util.List;
 import javafx.scene.image.Image;
 
 /**
- * @author: Havan Patel, and TPULLIS TRAVIS B
+ * @author: Havan Patel
  */
 public class Photo implements Serializable {
 

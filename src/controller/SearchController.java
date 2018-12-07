@@ -49,7 +49,7 @@ import model.Tag;
 import model.User;
 
 /**
-*@author: Havan Patel, and TPULLIS TRAVIS B
+* @author: Havan Patel
 */
 public class SearchController {
 	

@@ -23,7 +23,7 @@ import javafx.stage.WindowEvent;
 import model.User;
 
 /**
- * @author: Havan Patel, and TPULLIS TRAVIS B
+ * @author: Havan Patel
  */
 public class UiUserManager {
 	private List<User> users;

@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="874.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.UserAlbumController">
+   <children>
+      <Label layoutX="20.0" layoutY="13.0" text="Welcom:">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="userLable" layoutX="93.0" layoutY="8.0" text="Empty">
+         <font>
+            <Font size="20.0" />
+         </font></Label>
+      <Button fx:id="logout" layoutX="801.0" layoutY="11.0" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="25.0" prefWidth="59.0" text="Logout" />
+      <Label layoutX="80.0" layoutY="70.0" text="Albums">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <ListView fx:id="albumListview" layoutX="18.0" layoutY="99.0" prefHeight="410.0" prefWidth="180.0" />
+      <Button fx:id="removeAlbum" layoutX="34.0" layoutY="523.0" mnemonicParsing="false" onAction="#handleButtonAction" text="Remove" />
+      <Button fx:id="renameAlbum" layoutX="110.0" layoutY="523.0" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="25.0" prefWidth="59.0" text="Rename" />
+      <Label fx:id="fieldLable" layoutX="15.0" layoutY="562.0" text="Add New Album:">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <TextField fx:id="albumName" layoutX="140.0" layoutY="560.0" prefHeight="25.0" prefWidth="123.0" promptText="Album Name" />
+      <Button fx:id="createAlbum" layoutX="272.0" layoutY="560.0" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="25.0" prefWidth="59.0" text="Create" />
+      <Button fx:id="change" layoutX="272.0" layoutY="560.0" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="25.0" prefWidth="59.0" text="Change" visible="false" />
+      <Button fx:id="cancel" layoutX="337.0" layoutY="560.0" mnemonicParsing="false" onAction="#handleButtonAction" text="Cancel" visible="false" />
+      <ScrollPane fx:id="scrollPane" layoutX="202.0" layoutY="99.0" prefHeight="410.0" prefWidth="670.0">
+        <content>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="410.0" prefWidth="670.0" />
+        </content>
+      </ScrollPane>
+      <Button fx:id="addImage" layoutX="293.0" layoutY="36.0" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="25.0" prefWidth="95.0" text="Add Image" />
+      <Button fx:id="removeImage" layoutX="293.0" layoutY="66.0" mnemonicParsing="false" onAction="#handleButtonAction" text="Remove Image" />
+      <Label fx:id="albumSelected" layoutX="396.0" layoutY="515.0">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label fx:id="totalPhotos" layoutX="710.0" layoutY="515.0">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label fx:id="oldestPhoto" layoutX="396.0" layoutY="540.0">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label fx:id="earliestPhoto" layoutX="706.0" layoutY="540.0">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label fx:id="caption" layoutX="396.0" layoutY="564.0" maxWidth="450.0">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <ComboBox fx:id="moveCombo" layoutX="399.0" layoutY="66.0" prefHeight="25.0" prefWidth="205.0" promptText="Move selected photo to album" />
+      <ComboBox fx:id="copyCombo" layoutX="399.0" layoutY="36.0" prefHeight="25.0" prefWidth="205.0" promptText="Copy selected photo to album" />
+      <Button fx:id="search" layoutX="202.0" layoutY="37.0" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="53.0" prefWidth="76.0" text="Search" />
+   </children>
+</Pane>

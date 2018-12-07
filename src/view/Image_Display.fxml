@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="613.0" prefWidth="480.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.DisplayImageController">
+   <top>
+      <AnchorPane prefHeight="42.0" prefWidth="600.0" BorderPane.alignment="CENTER">
+         <children>
+            <Button fx:id="backward" layoutX="386.0" layoutY="8.0" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="25.0" prefWidth="32.0" text="&lt;" />
+            <Button fx:id="forward" layoutX="430.0" layoutY="8.0" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="25.0" prefWidth="32.0" text="&gt;" />
+            <Label fx:id="date" layoutX="6.0" layoutY="4.0" text="Date Taken:-" />
+            <Label fx:id="time" layoutX="6.0" layoutY="20.0" text="Time Taken:-" />
+            <Button fx:id="capButton" layoutX="240.0" layoutY="8.0" mnemonicParsing="false" onAction="#handleButtonAction" text="Add/Edit Caption" />
+            <Button fx:id="tagButton" layoutX="151.0" layoutY="8.0" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="25.0" prefWidth="83.0" text="Add Tags" />
+         </children>
+      </AnchorPane>
+   </top>
+   <center>
+      <VBox prefWidth="480.0" BorderPane.alignment="CENTER">
+         <children>
+            <StackPane prefWidth="480.0">
+               <children>
+                  <ImageView fx:id="imageview" fitHeight="318.0" fitWidth="480.0" pickOnBounds="true" preserveRatio="true" />
+               </children>
+            </StackPane>
+            <AnchorPane prefHeight="74.0" prefWidth="480.0">
+               <children>
+                  <Button fx:id="addCap" layoutX="415.0" layoutY="62.0" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="25.0" prefWidth="51.0" text="Add" visible="false" />
+                  <Button fx:id="cancel" layoutX="357.0" layoutY="62.0" mnemonicParsing="false" onAction="#handleButtonAction" text="Cancel" visible="false" />
+                  <Text fx:id="caption" layoutX="9.0" layoutY="43.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Caption:" wrappingWidth="462.0">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </Text>
+                  <TextArea fx:id="capArea" layoutX="70.0" layoutY="14.0" prefHeight="46.0" prefWidth="395.0" promptText="Enter Caption" visible="false" />
+                  <Label contentDisplay="CENTER" layoutX="185.0" layoutY="72.0" text="Tag Type : Tag Value" />
+               </children>
+            </AnchorPane>
+            <ListView fx:id="tagList" prefWidth="480.0" />
+         </children>
+      </VBox>
+   </center>
+</BorderPane>
